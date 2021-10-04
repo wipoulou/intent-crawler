@@ -8,3 +8,6 @@ Franprix has an API, so it doesn't fit the scrapping requirement, but still inte
 class Franprix(Provider):
     name = "Franprix"
     endpoint = ""
+
+
+franprix = Franprix()
