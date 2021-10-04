@@ -1,6 +1,6 @@
 class Provider:
-    def __init__(self, url):
-        self.urf = url
+    name = None
+    endpoint = None
 
     def scrape(self) -> dict:
         raise NotImplementedError
