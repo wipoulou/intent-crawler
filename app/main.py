@@ -1,7 +1,7 @@
 import logging
 
 from consumer import Consummer
-from provider import Provider
+from providers.provider import Provider
 
 logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
