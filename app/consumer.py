@@ -6,10 +6,12 @@ class Consummer:
         self.providers = providers
 
     def scrape(self):
+        export = {}
         for provider in self.providers:
             try:
-                provider.scrape()
+                export[provider.name] = provider.scrape()
             except (NotImplementedError):
                 logging.error(
                     f"{type(provider).__name__} does not have the function scrape() implemented"
                 )
+        return export
