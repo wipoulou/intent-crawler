@@ -1,6 +1,3 @@
-import scrapy
-
-
-class Provider(scrapy.Spider):
+class Provider:
     def scrape(self) -> dict:
         raise NotImplementedError
