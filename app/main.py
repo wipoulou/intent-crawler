@@ -1,8 +1,5 @@
 import logging
 
-from consumer import Consummer
-from providers import auchan, carrefour, franprix, lidl
-
 logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     filename="output.log",
@@ -14,12 +11,4 @@ logging.basicConfig(
 if __name__ == "__main__":
     logging.info("Starting")
 
-    consumer = Consummer(
-        auchan.auchan,
-        carrefour.carrefour,
-        franprix.franprix,
-        lidl.lidl,
-    )
-
-    consumer.scrape()
     logging.info("Ending")
