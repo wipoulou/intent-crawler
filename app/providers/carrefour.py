@@ -1,4 +1,4 @@
-from provider import Provider
+from providers.provider import Provider
 
 
 class Carrefour(Provider):
