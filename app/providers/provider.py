@@ -1,6 +1,6 @@
-class Provider:
-    name = None
-    endpoint = None
+import scrapy
 
+
+class Provider(scrapy.spider):
     def scrape(self) -> dict:
         raise NotImplementedError
